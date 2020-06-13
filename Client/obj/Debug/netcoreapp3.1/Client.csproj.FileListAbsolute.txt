@@ -1,0 +1,16 @@
+C:\ESD\Client\bin\Debug\netcoreapp3.1\Client.exe
+C:\ESD\Client\obj\Debug\netcoreapp3.1\Client.csprojAssemblyReference.cache
+C:\ESD\Client\obj\Debug\netcoreapp3.1\Client.AssemblyInfoInputs.cache
+C:\ESD\Client\obj\Debug\netcoreapp3.1\Client.AssemblyInfo.cs
+C:\ESD\Client\bin\Debug\netcoreapp3.1\Client.deps.json
+C:\ESD\Client\bin\Debug\netcoreapp3.1\Client.runtimeconfig.json
+C:\ESD\Client\bin\Debug\netcoreapp3.1\Client.runtimeconfig.dev.json
+C:\ESD\Client\bin\Debug\netcoreapp3.1\Client.dll
+C:\ESD\Client\bin\Debug\netcoreapp3.1\Client.pdb
+C:\ESD\Client\bin\Debug\netcoreapp3.1\IdentityModel.dll
+C:\ESD\Client\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\ESD\Client\obj\Debug\netcoreapp3.1\Client.csproj.CoreCompileInputs.cache
+C:\ESD\Client\obj\Debug\netcoreapp3.1\Client.csproj.CopyComplete
+C:\ESD\Client\obj\Debug\netcoreapp3.1\Client.dll
+C:\ESD\Client\obj\Debug\netcoreapp3.1\Client.pdb
+C:\ESD\Client\obj\Debug\netcoreapp3.1\Client.genruntimeconfig.cache
