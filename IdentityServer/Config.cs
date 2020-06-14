@@ -53,13 +53,17 @@ namespace IdentityServer
                         AllowedGrantTypes = GrantTypes.Code,
                         RequireConsent = false,
                         RequirePkce = true,
+                        // where to redirect to after login
                         RedirectUris = { "https://localhost:5002/signin-oidc" },
+                        // where to redirect to after logout
                         PostLogoutRedirectUris = { "https://localhost:5002/signout-callback-oidc" },
                         AllowedScopes = new List<string>
                         {
                             IdentityServerConstants.StandardScopes.OpenId,
-                            IdentityServerConstants.StandardScopes.Profile
-                        }
+                            IdentityServerConstants.StandardScopes.Profile,
+                            "api1"
+                        },
+                        AllowOfflineAccess = true //启用对刷新令牌的
                     }
                 };
                 return clients; 

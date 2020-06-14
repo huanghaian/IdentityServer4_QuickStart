@@ -41,6 +41,8 @@ namespace MyMvcClient
                 options.ResponseType = model.ConfigModel.ResponseType;
                 options.SaveTokens = model.ConfigModel.SaveTokens;
 
+                options.Scope.Add("api1");
+                options.Scope.Add("offline_access");
             });
             services.AddControllersWithViews();
             
