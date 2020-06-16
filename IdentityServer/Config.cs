@@ -64,6 +64,24 @@ namespace IdentityServer
                             "api1"
                         },
                         AllowOfflineAccess = true //启用对刷新令牌的
+                    },
+                    new Client
+                    {
+                        ClientId = "js",
+                        ClientName="Javascript Client111",
+                        AllowedGrantTypes = GrantTypes.Code,
+                        RequirePkce = true,
+                        RequireClientSecret = false,
+                        RedirectUris={ "http://localhost:5003/callback.html"},
+                        PostLogoutRedirectUris = { "http://localhost:5003/index.html"},
+                        AllowedCorsOrigins = { "http://localhost:5003"},
+                        AllowedScopes =
+                        {
+                            IdentityServerConstants.StandardScopes.OpenId,
+                            IdentityServerConstants.StandardScopes.Profile,
+                            "api1"
+                        }
+
                     }
                 };
                 return clients; 

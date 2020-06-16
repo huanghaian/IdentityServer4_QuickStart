@@ -19,10 +19,16 @@ namespace Api
             services.AddControllers();
             services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
             {
-                options.Authority = "https://localhost:5001";
+                options.Authority = "http://localhost:5000";
                 //ÕâÊÇÊ²Ã´£¿
                 options.RequireHttpsMetadata = false;
                 options.Audience = "api1";
+            });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("default",policy => {
+                    policy.WithOrigins("http://localhost:5003").AllowAnyHeader().AllowAnyMethod();
+                });
             });
         }
 
@@ -35,6 +41,8 @@ namespace Api
             }
 
             app.UseRouting();
+            app.UseCors("default");
+
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
