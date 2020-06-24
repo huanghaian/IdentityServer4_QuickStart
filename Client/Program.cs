@@ -1,6 +1,7 @@
 ﻿using IdentityModel.Client;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Net.Http;
@@ -11,6 +12,7 @@ namespace Client
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             //Task.Run(async () =>

@@ -175,7 +175,7 @@ namespace IdentityServer.Device
 
                 RememberConsent = model?.RememberConsent ?? true,
                 ScopesConsented = model?.ScopesConsented ?? Enumerable.Empty<string>(),
-                
+
                 ClientName = client.ClientName ?? client.ClientId,
                 ClientUrl = client.ClientUri,
                 ClientLogoUrl = client.LogoUri,
